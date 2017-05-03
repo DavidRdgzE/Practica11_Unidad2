@@ -1,0 +1,76 @@
+body{
+	background-color: black;
+}
+
+.titulo{
+	color: white;
+	font-size: 50px;
+	font-family: comic;
+	font-style: italic;
+	font-style: bold;
+	padding-top: 95px;
+}
+
+#navigation{
+	background-color: black;
+}
+
+#iplink{
+	color: red;
+	font-style: bold;
+	font-style: italic;
+}
+
+#inicio{
+	background-color: black;
+}
+
+footer{
+	background-color: black;
+}
+
+#i-ba{
+	width: 100%;
+	height: 200px;
+}
+
+#busca{
+	margin-bottom: 23px;
+}
+
+#txtArea{
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+#imglogo{
+	margin-top: 50px;
+	width: 100%;
+}
+
+#tabtit{
+	color: white;
+	font-style: bold;
+	font-style: italic;
+}
+
+.footer-txt{
+	color: white;
+}
+
+#h1con{
+	font-size: 50px;
+	color: white;
+	font-style: bold;
+	font-family: Comic;
+}
+
+#bet{
+	color: red;
+	font-size: 30px;
+}
+
+.navbar-toggle{	
+	color: white;
+}
+

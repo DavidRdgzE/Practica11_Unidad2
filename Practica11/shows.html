@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 11</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <nav id="navigation" class="navbar navbar-default navbar-fixed-top navbar-custom">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                        <span class="sr-only"></span>Menu<i class="fa fa-bars"></i>
+                    </button>
+                    <a class="titulo"><b>Metal Factory</b></a>
+                    <img src="public/img/metal.png" alt="Logo" width="64" height="64" class="push-right">
+
+                </div>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a id="iplink" href="index.html"><b>Home</b></a>
+                        </li>
+                        <li>
+                            <a id="iplink" href="shows.html"><b>Shows</b></a>
+                        </li>
+                        <li >
+                            <a id="iplink" href="contact.html"><b>Contact</b></a>
+                        </li>
+                        <li>
+                            <textarea id="txtArea" placeholder="Buscar" id="busca" cols="15" rows="1"></textarea>
+                            <button id="busca" class="btn btn-info"><span class="glyphicon glyphicon-search"></span></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <img id="imglogo" src="public/img/logo.png" alt="logo">
+
+        <section>
+            <table class="table table-bordered table-hover"> <!-- bordered - striped - hover-->
+                <thead>
+                    <tr>
+                        <th id="tabtit">Band</th>
+                        <th id="tabtit">Show take Place in</th>
+                        <th id="tabtit">Date</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="warning">
+                        <td>Iron Maiden</td>
+                        <td>Lollapoliza Brazil</td>
+                        <td>May 20, 2017 at 9:00 PM</td>
+                    </tr>
+                    <tr class="warning">
+                        <td>Metallica</td>
+                        <td>Foro Sol, Mexico City</td>
+                        <td>June 3, 2017 at 9:30 PM</td>
+                    </tr>
+                    <tr class="warning">
+                        <td>Megadeth</td>
+                        <td>Sports Palace, Mexico City</td>
+                        <td>June 15, 2017 at 8:00 PM</td>
+                    </tr>
+                    <tr class="warning">
+                        <td>AC/DC</td>
+                        <td>Allianz Arena, Munich-Germany</td>
+                        <td>june 28, 2017 at 6:00 PM</td>
+                    </tr>
+                    <tr class="warning">
+                        <td>Scorpions</td>
+                        <td>Lollapoliza Chile</td>
+                        <td>July 4, 2017 at 5:00 PM</td>
+                    </tr>
+                    <tr class="warning">
+                        <td>Black Sabbath</td>
+                        <td>Iuna Park, Germany</td>
+                        <td>july 20, 2017 at 8:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+    </div>
+
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="footer-txt col-md-4">
+                    <h3><b>Foundation</b></h3>
+                    <p><b>29 / April / 2017 <br>Itch II - Chihuahua, Chihuahua</b></p>
+                </div>
+                <div class="footer-txt col-md-4">
+                    <h3><b>Social Networks</b></h3>
+                    <ul class="list-inline">
+                        <li>
+                            <button class="btn btn-primary"> 
+                                <a href="http://www.facebook.com"><img src="public/img/fb.png" alt=""></a>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn btn-primary">
+                                <a href="http://www.twitter.com"><img src="public/img/tw.png" alt=""></a>
+                            </button>
+                        </li>
+                            </ul>
+                </div>
+                <div class="footer-txt col-md-4">
+                    <h3><b>About</b></h3>
+                    <p><b>This Website is only a fan Webpage. Created to show some information about metal bands and their shows in the world</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 footer-txt">
+                    <b>Website created by David Rodriguez</b> 
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>

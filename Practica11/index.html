@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 11</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <nav id="navigation" class="navbar navbar-default navbar-fixed-top navbar-custom">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                        <span class="sr-only"></span>Menu<i class="fa fa-bars"></i>
+                    </button>
+                    <a class="titulo"><b>Metal Factory</b></a>
+                    <img src="public/img/metal.png" alt="Logo" width="64" height="64" class="push-right">
+                </div>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a id="iplink" href="index.html"><b>Home</b></a>
+                        </li>
+                        <li>
+                            <a id="iplink" href="shows.html"><b>Shows</b></a>
+                        </li>
+                        <li >
+                            <a id="iplink" href="contact.html"><b>Contact</b></a>
+                        </li>
+                        <li>
+                            <textarea id="txtArea" placeholder="Buscar" id="busca" cols="15" rows="1"></textarea>
+                            <button id="busca" class="btn btn-info"><span class="glyphicon glyphicon-search"></span></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <img id="imglogo" src="public/img/logo.png" alt="logo">
+
+        <ul class="list-group">
+            <li class="list-group-item">
+                <section ng-init="panel.tab" ng-controller="PanelController as panel">
+                    <ul class="nav nav-pills">
+                        <li ng-class="{ active: panel.isSelected(1)}"><a href="#" ng-click="panel.selectTab(1)">Gallery</a></li>
+                        <li ng-class="{ active: panel.isSelected(2)}"><a href="#" ng-click="panel.selectTab(2)">Best Bands</a></li>
+                    </ul>
+                    <div class="panel" ng-show = "panel.isSelected(1)">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a href="#">
+                                    <img src="public/img/maiden.png" class="img" alt="Baile1" id="i-ba">
+                                </a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="#">
+                                    <img src="public/img/metallica.png" class="img-responsive" alt="Baile2" id="i-ba">
+                                </a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="#">
+                                    <img src="public/img/megadeth.png" class="img-responsive" alt="Baile3" id="i-ba">
+                                </a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a href="#">
+                                    <img src="public/img/acdc.png" class="img-responsive" alt="Baile4" id="i-ba">
+                                </a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="#">
+                                    <img src="public/img/sabbath.png" class="img-responsive" alt="Baile5" id="i-ba">
+                                </a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="#">
+                                    <img src="public/img/dragon.png" class="img-responsive" alt="Baile6" id="i-ba">
+                                </a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a href="#">
+                                    <img src="public/img/ozzy.png" class="img-responsive" alt="Baile4" id="i-ba">
+                                </a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="#">
+                                    <img src="public/img/maidens.png" class="img-responsive" alt="Baile5" id="i-ba">
+                                </a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="#">
+                                    <img src="public/img/warcry.png" class="img-responsive" alt="Baile6" id="i-ba">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel" ng-show = "panel.isSelected(2)">
+                        <table class="table table-bordered table-hover"> <!-- bordered - striped - hover-->
+                            <thead>
+                                <tr>
+                                    <th>Genre</th>
+                                    <th>Name</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr class="warning">
+                                    <td>Heavy Metal</td>
+                                    <td>Iron Maiden</td>
+                                </tr>
+                                <tr class="warning">
+                                    <td>Thrash Metal</td>
+                                    <td>Metallica</td>
+                                </tr>
+                                <tr class="warning">
+                                    <td>Folkrock</td>
+                                    <td>Mago de Oz</td>
+                                </tr>
+                                <tr class="warning">
+                                    <td>Death Metal</td>
+                                    <td>Suicide Silence</td>
+                                </tr>
+                                <tr class="warning">
+                                    <td>Rock</td>
+                                    <td>Bon Jovi</td>
+                                </tr>
+                                <tr class="warning">
+                                    <td>Metal</td>
+                                    <td>Black Sabbath</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </li>
+        </ul>
+    </div>
+
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="footer-txt col-md-4">
+                    <h3><b>Foundation</b></h3>
+                    <p><b>29 / April / 2017 <br>Itch II - Chihuahua, Chihuahua</b></p>
+                </div>
+                <div class="footer-txt col-md-4">
+                    <h3><b>Social Networks</b></h3>
+                    <ul class="list-inline">
+                        <li>
+                            <button class="btn btn-primary"> 
+                                <a href="http://www.facebook.com"><img src="public/img/fb.png" alt=""></a>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn btn-primary">
+                                <a href="http://www.twitter.com"><img src="public/img/tw.png" alt=""></a>
+                            </button>
+                        </li>
+                            </ul>
+                </div>
+                <div class="footer-txt col-md-4">
+                    <h3><b>About</b></h3>
+                    <p><b>This Website is only a fan Webpage. Created to show some information about metal bands and their shows in the world</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 footer-txt">
+                    <b>&copy; David Rodríguez, All Rights Reserved.</b> 
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
